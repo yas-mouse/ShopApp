@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		4FB2D9BD2B31C7080012BD68 /* ShopAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2D9BC2B31C7080012BD68 /* ShopAppApp.swift */; };
-		4FB2D9BF2B31C7080012BD68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2D9BE2B31C7080012BD68 /* ContentView.swift */; };
 		4FB2D9C12B31C70A0012BD68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FB2D9C02B31C70A0012BD68 /* Assets.xcassets */; };
 		4FB2D9C52B31C70A0012BD68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FB2D9C42B31C70A0012BD68 /* Preview Assets.xcassets */; };
+		4FD4A8232B31D18F00F238EC /* FeatureModules in Frameworks */ = {isa = PBXBuildFile; productRef = 4FD4A8222B31D18F00F238EC /* FeatureModules */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4FB2D9B92B31C7080012BD68 /* ShopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FB2D9BC2B31C7080012BD68 /* ShopAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopAppApp.swift; sourceTree = "<group>"; };
-		4FB2D9BE2B31C7080012BD68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4FB2D9C02B31C70A0012BD68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FB2D9C22B31C70A0012BD68 /* ShopApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShopApp.entitlements; sourceTree = "<group>"; };
 		4FB2D9C42B31C70A0012BD68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4FD4A8202B31C8FB00F238EC /* ShopApp */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ShopApp; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FD4A8232B31D18F00F238EC /* FeatureModules in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,7 +38,9 @@
 			isa = PBXGroup;
 			children = (
 				4FB2D9BB2B31C7080012BD68 /* ShopApp */,
+				4FD4A8202B31C8FB00F238EC /* ShopApp */,
 				4FB2D9BA2B31C7080012BD68 /* Products */,
+				4FD4A8212B31D18F00F238EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				4FB2D9BC2B31C7080012BD68 /* ShopAppApp.swift */,
-				4FB2D9BE2B31C7080012BD68 /* ContentView.swift */,
 				4FB2D9C02B31C70A0012BD68 /* Assets.xcassets */,
 				4FB2D9C22B31C70A0012BD68 /* ShopApp.entitlements */,
 				4FB2D9C32B31C70A0012BD68 /* Preview Content */,
@@ -67,6 +69,13 @@
 				4FB2D9C42B31C70A0012BD68 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4FD4A8212B31D18F00F238EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +94,9 @@
 			dependencies = (
 			);
 			name = ShopApp;
+			packageProductDependencies = (
+				4FD4A8222B31D18F00F238EC /* FeatureModules */,
+			);
 			productName = ShopApp;
 			productReference = 4FB2D9B92B31C7080012BD68 /* ShopApp.app */;
 			productType = "com.apple.product-type.application";
@@ -139,7 +151,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FB2D9BF2B31C7080012BD68 /* ContentView.swift in Sources */,
 				4FB2D9BD2B31C7080012BD68 /* ShopAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +295,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.6;
@@ -292,7 +303,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = yas.ShopApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,7 +334,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.6;
@@ -330,7 +342,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = yas.ShopApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,6 +372,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4FD4A8222B31D18F00F238EC /* FeatureModules */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeatureModules;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4FB2D9B12B31C7080012BD68 /* Project object */;
 }

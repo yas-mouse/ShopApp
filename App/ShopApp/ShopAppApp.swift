@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FeatureModules
 
 @main
 struct ShopAppApp: App {
