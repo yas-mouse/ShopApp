@@ -10,15 +10,21 @@
 		4FB2D9BD2B31C7080012BD68 /* ShopAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2D9BC2B31C7080012BD68 /* ShopAppApp.swift */; };
 		4FB2D9C12B31C70A0012BD68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FB2D9C02B31C70A0012BD68 /* Assets.xcassets */; };
 		4FB2D9C52B31C70A0012BD68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FB2D9C42B31C70A0012BD68 /* Preview Assets.xcassets */; };
-		4FD4A8232B31D18F00F238EC /* FeatureModules in Frameworks */ = {isa = PBXBuildFile; productRef = 4FD4A8222B31D18F00F238EC /* FeatureModules */; };
+		4FC02C402B31E325009D3152 /* Root in Frameworks */ = {isa = PBXBuildFile; productRef = 4FC02C3F2B31E325009D3152 /* Root */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F5A8F402B31E8E100822900 /* Model */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Model; path = ../../DataAccess/Model; sourceTree = "<group>"; };
+		4F5A8F412B31E93B00822900 /* Repository */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Repository; path = ../../DataAccess/Repository; sourceTree = "<group>"; };
+		4F8A6C7C2B3832990013CB02 /* ShopProducts */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ShopProducts; sourceTree = "<group>"; };
+		4F8A6C802B3839220013CB02 /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Extensions; sourceTree = "<group>"; };
 		4FB2D9B92B31C7080012BD68 /* ShopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FB2D9BC2B31C7080012BD68 /* ShopAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopAppApp.swift; sourceTree = "<group>"; };
 		4FB2D9C02B31C70A0012BD68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FB2D9C22B31C70A0012BD68 /* ShopApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShopApp.entitlements; sourceTree = "<group>"; };
 		4FB2D9C42B31C70A0012BD68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4FC02C3E2B31E29C009D3152 /* Root */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Root; sourceTree = "<group>"; };
+		4FC02C412B31E421009D3152 /* FavoriteProducts */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FavoriteProducts; sourceTree = "<group>"; };
 		4FD4A8202B31C8FB00F238EC /* ShopApp */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ShopApp; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -27,20 +33,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FD4A8232B31D18F00F238EC /* FeatureModules in Frameworks */,
+				4FC02C402B31E325009D3152 /* Root in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F5A8F3E2B31E76A00822900 /* DataAcess */ = {
+			isa = PBXGroup;
+			children = (
+				4F5A8F412B31E93B00822900 /* Repository */,
+				4F5A8F402B31E8E100822900 /* Model */,
+			);
+			path = DataAcess;
+			sourceTree = "<group>";
+		};
+		4F8A6C7D2B3834BA0013CB02 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4F8A6C802B3839220013CB02 /* Extensions */,
+			);
+			name = Extensions;
+			path = ../Extensions;
+			sourceTree = "<group>";
+		};
 		4FB2D9B02B31C7080012BD68 = {
 			isa = PBXGroup;
 			children = (
-				4FB2D9BB2B31C7080012BD68 /* ShopApp */,
 				4FD4A8202B31C8FB00F238EC /* ShopApp */,
-				4FB2D9BA2B31C7080012BD68 /* Products */,
+				4F5A8F3E2B31E76A00822900 /* DataAcess */,
+				4F8A6C7D2B3834BA0013CB02 /* Extensions */,
+				4FC02C3D2B31E1C6009D3152 /* FeatureModules */,
 				4FD4A8212B31D18F00F238EC /* Frameworks */,
+				4FB2D9BA2B31C7080012BD68 /* Products */,
+				4FB2D9BB2B31C7080012BD68 /* ShopApp */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +98,17 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4FC02C3D2B31E1C6009D3152 /* FeatureModules */ = {
+			isa = PBXGroup;
+			children = (
+				4F8A6C7C2B3832990013CB02 /* ShopProducts */,
+				4FC02C412B31E421009D3152 /* FavoriteProducts */,
+				4FC02C3E2B31E29C009D3152 /* Root */,
+			);
+			name = FeatureModules;
+			path = ../FeatureModules;
+			sourceTree = "<group>";
+		};
 		4FD4A8212B31D18F00F238EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,7 +133,7 @@
 			);
 			name = ShopApp;
 			packageProductDependencies = (
-				4FD4A8222B31D18F00F238EC /* FeatureModules */,
+				4FC02C3F2B31E325009D3152 /* Root */,
 			);
 			productName = ShopApp;
 			productReference = 4FB2D9B92B31C7080012BD68 /* ShopApp.app */;
@@ -374,9 +412,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4FD4A8222B31D18F00F238EC /* FeatureModules */ = {
+		4FC02C3F2B31E325009D3152 /* Root */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = FeatureModules;
+			productName = Root;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -6,13 +6,15 @@
 //
 
 import SwiftUI
-import FeatureModules
+import Root
+import Repository
 
 @main
 struct ShopAppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(User())
         }
     }
 }

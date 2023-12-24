@@ -4,18 +4,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "ShopApp",
-    platforms: [.iOS(.v15)],
+    name: "Extensions",
+    platforms: [
+        .iOS(.v15),
+    ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "FeatureModules",
-            targets: ["FeatureModules"]),
+            name: "Extensions",
+            targets: ["Extensions"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "FeatureModules"),
+            name: "Extensions"),
+        .testTarget(
+            name: "ExtensionsTests",
+            dependencies: ["Extensions"]),
     ]
 )
