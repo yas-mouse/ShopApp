@@ -31,15 +31,6 @@ public struct ContentView: View {
         ZStack {
             NavigationView {
                 TabView(selection: $selectedTab) {
-                    Color.yellow
-                        .tabItem {
-                            VStack {
-                                Image(systemName: "house")
-                                Text(Tabs.home.rawValue)
-                            }
-                        }
-                        .tag(Tabs.home)
-
                     ProductTabsView()
                         .tabItem {
                             VStack {

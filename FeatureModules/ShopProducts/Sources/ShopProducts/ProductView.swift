@@ -45,7 +45,8 @@ public struct ProductView: View {
                 .padding(.trailing, 16.0)
             }
         }
-        .frame(maxWidth: 250)
+        .frame(maxWidth: 250,
+               maxHeight: 600)
         .background(.white)
         .cornerRadius(8)
         .shadow(radius: 4)
